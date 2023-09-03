@@ -6,6 +6,8 @@ public class F1 extends Car {
         super(name, 4, 2, 6, isManual, "Formula 1", 1);
     }
 
+
+
     public void accelerate(int rate) {
         int newSpeed = getCurrentSpeed() + rate;
 
