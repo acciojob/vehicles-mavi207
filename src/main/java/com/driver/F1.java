@@ -6,7 +6,13 @@ public class F1 extends Car {
         super(name, 4, 2, 6, isManual, "Formula 1", 1);
     }
 
+    public F1(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
+        super(name, wheels, doors, gears, isManual, type, seats);
+    }
 
+    public F1(String name, int wheels, String type, int doors, int gears, boolean isManual, int currentGear, int seats) {
+        super(name, wheels, type, doors, gears, isManual, currentGear, seats);
+    }
 
     public void accelerate(int rate) {
         int newSpeed = getCurrentSpeed() + rate;
